@@ -4,11 +4,15 @@
 <!--head-->
   <head>
     <meta charset="utf-8">
+    <!--preguntar la diferencia entre ambos-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--lo de aqui abajo es  el link de la imagen que aparece en la pestaña-->
     <link rel="shortcut icon" type="image/x-icon" href="../img/sharing-wb-logo-clear.png">
     <title>Banco Mundial</title>
-    <!--falta link de bootstrap-->
+    <!--aqui abajo va el link de bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
 
   </head>
@@ -18,8 +22,31 @@
       <div id="root"></div>
 
     <header>
-      
-             <!--navbar-->
+      <!--este es el navbar pero hay que cambiarlo-->
+  
+                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="../img/sharing-wb-logo-clear.png" alt="Banco Mundial" title="Banco Mundial" class="src">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Datos</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>      
+
    
 
     </header>
@@ -32,38 +59,76 @@
    
 <!--Página 1-->
     <!--carrusel-->
+
+
+
+
     
-    <article class="article">
+<div id="page1">
+
+    <div class="container">
+    <article class="col-12">
       <h2>Sobre Nosotros</h2>
       <p>Somos una organización sin fines de lucro, que busca socializar de manera 
         simple y práctica, datos de indicadores de desigualdad socio económica en 
         Latinoamérica, para fomentar la investigación en miras de mejorar las políticas sociales.</p>
-        <button>Ir a about us</button>
+        <button class="btn btn-primary" id="pagina2">Ir a about us</button>
       </article>
 
-    <article class="article">
+    <article class="col-12">
       <h2>Datos</h2>
       <p>En base a estadísticas entregadas públicamente por el Banco Mundial, entregamos resultados porcentuales 
       y gráficos de encuestas de los últimos 15 años, aplicadas en México, Chile, Perú y Brasil.</p>
-      <button>Ir a los datos</button>
+      <button class="btn btn-primary" id="pagina3">Ir a los datos</button>
     </article>
 
-    <article>
+    <article class="col-12" >
       <h2>Sobre el banco mundial</h2>
       <p>Es una organización multinacional, especializada en finanzas y asistencia. Su objetivo principal, es acabar 
         con la pobreza extrema en el mundo, mediante créditos, asistencia a más de 100 países en vías de desarrollo</p>
       <a target="_blank" href="https://www.bancomundial.org/">Ir a la página del banco mundial</a>
     </article>
-
+    </div>
+</div>
     <!--Página 2-->
-    <!--Página 3-->
+    <div>
+    <h2>Sobre nuestra pagina</h2>
+    <p>Somos una organización sin fines de lucro, que busca socializar de manera 
+        simple y práctica, datos de indicadores de desigualdad socio económica en 
+        Latinoamérica, para fomentar la investigación en miras de mejorar las políticas sociales.</p>
+  </div>
+  <br>
+  <div>
+    <h2>¿Como utilizar nuestra página?</h2>
+    <p>el modo de uso de nuestra página es el siguiente:</p>
+  </div>
 
+    <!--Página 3-->
+    <!--esto tiene que ver con los filtros , no borrar-->
+    <div id="page3">
+      <p>Filtrar por:</p>
+      <select name="country" id="country">
+      <option value="brazil" id="bra">Brasil</option>
+      <option value="chile" id="chi">Chile</option>
+      <option value="mexico" id="mex">México</option>
+      <option value="peru" id="per">Perú</option>
+    </select>
+      <select name="year" id="year" placeholder="año"></select>
+      <select name="sex" id="sex" placeholder="sexo">
+      <option value="female" id="female">Femenino</option>
+      <option value="male" id="male">Masculino</option>
+    </select>
+      <select name="order" id="order">Ordenar</select>
+    </div>
+    
   </main>
 
 
     <footer class = "footer">
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./data/worldbank/worldbank.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
