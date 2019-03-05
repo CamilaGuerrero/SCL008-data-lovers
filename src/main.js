@@ -1,3 +1,4 @@
+
 window.onload = () => {
   document.getElementById("page1").style.display="block";
   document.getElementById("page2").style.display ="none";
