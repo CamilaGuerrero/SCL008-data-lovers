@@ -15,6 +15,16 @@ Así, el objetivo declarado de esta organización es "reducir la pobreza mediant
 
 ## Resumen del proyecto
 
+
+## Prototipo de alta fidelidad
 Link de Zeplin
 zpl.io/a8wwN0d
 https://scene.zeplin.io/project/5c7546d3be5823bd110ec7d4
+
+## Prototipo de baja fidelidad
+https://ibb.co/VVCqbNT
+https://ibb.co/9gkXf78
+https://ibb.co/q01SF2v
+https://ibb.co/1KGCP15
+
+
