@@ -43,17 +43,17 @@ for(let i=0; i<dataBank.length; i++){
      indicator :  dataBank[i].indicatorName,
    });
    document.getElementById('insert').innerHTML +=`<ul><li>
-   <a href="#" id="${dataBank[i].indicatorName}">${dataBank[i].indicatorName}</a>
+   <a href="#" class="link" id="${dataBank[i].indicatorName}">${dataBank[i].indicatorName}</a>
    </li></ul>`;
    
    document.getElementById(dataBank[i].indicatorName).addEventListener('click', () => {
     // if(){
-    document.getElementById('newinsert').innerHTML += `<ul><li><p>${indicatorName}</p></li></ul>`
+    //document.getElementById('newinsert').innerHTML += `<ul><li><p>${indicatorName}</p></li></ul>`
      //}
    })
   };
 
-console.log(indicatorName)
+//console.log(indicatorName)
 /*
 let link = ""
 for(let i =0; i<data.length;i++){
