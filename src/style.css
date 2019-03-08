@@ -49,18 +49,13 @@
 text-decoration: none;
 color: #333333;
 }
-.link:link{
-   
-}
+
 .link:hover{
 text-decoration: underline;
 color: grey;
 }
 .link:active{
     color: skyblue;
-}
-.link:visited{
-
 }
 
 .btn-primary {
