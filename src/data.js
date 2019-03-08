@@ -1,9 +1,8 @@
-const filterData = () => {
+const filterData = (data,condition) => {
 //function filterData (data, condition) en archivo src/data.js filtra
 
   // return 'example';
-};
-
+}
 const sortData = () => {
 //sortData(data, sortBy, sortOrder) en archivo src/data.js ordena
 
