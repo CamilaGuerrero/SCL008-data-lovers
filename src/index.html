@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--Los comentarios de líneas en específico, van bajo estas. En cuanto a los comentarios que indican secciones, irán arriba de estos-->
 <html lang="en">
  <!--haed-->
   <head>
@@ -7,9 +6,9 @@
 <!--Mobile First-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/sharing-wb-logo-clear.png">
     <title>Banco Mundial</title>
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento|Raleway" rel="stylesheet">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Quattrocento|Raleway" rel="stylesheet">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
@@ -25,20 +24,20 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
-            <img alt="Acá debería ir el logo" src"http://www.worldbank.org/content/dam/wbr/share-logo/social-share.jpg">
+            <img class="img-header" alt="Acá debería ir el logo" src="https://i.ibb.co/yNPP88w/logo-white.png" width="220" height="53">
           </a>
         </div>
 <!--ELEMENTOS DEL NAVBAR-->
 <!--La siguiente línea es lo que hace a los elementos del navbar centrarse-->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#" id="init">INICIO <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="#">ABOUT US</a>
+       <a class="nav-link" href="#" id="about">ABOUT US</a>
       </li>
       <li class="nav-item">
-       <a class="nav-link datos" href="#">DATOS</a>
+       <a class="nav-link datos" href="#" id="datos">DATOS</a>
       </li>
     </ul>
 <!--BOTÓN DE BÚSQUEDA-->
@@ -48,48 +47,17 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
       </form>
         </div>
+        </div>
       </nav>
     </header>
+    <br>
+    <br>
 <main>
 <div id="page1">
-<!--PÁGINA INICIAL-->
-<!--CARRUSEL, no corren las imágenes aún-->
-<!--EL SIGUIENTE BLOQUE DE CÓDIGO ERA UNA FORMA DE HAER EL CARRUSEL, Y SE DESCONCHINFLO TODO-->
-<!-- <div class="container">
-  <div class="col-md-12">
-    <div id="principalCarousel" class="carousel slide" data-ride="carousel">
--Indicadores
-lista simple donde colocamos los indicadores (pelotitas) targeteando el id del carrusel
-    <ol class="carousel-indicators">
-      <li data-target="#principalCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#principalCarousel" data-slide-to="1"></li>
-      <li data-target="#principalCarousel" data-slide-to="2"></li>
-      <li data-target="#principalCarousel" data-slide-to="3"></li>
-    </ol>
--Contenedor de los slide
- <div class="carousel-inner" role="listbox">
-al primer slide le doy la clase de item active acá y en los indicadores más arriba, sólo al primero
-  <div class="item active">
-    <img src="https://www.bancomundial.org/content/dam/photos/1200x400/2019/jan/Pakistan-Balochistan.jpg" alt="First slide">
-  </div>
-</div>
-<div class="item">
-  <img src="http://www.bancomundial.org/content/dam/photos/780x439/2016/apr/perspectivas-spring-2016.jpg" alt="First slide">
-</div>
-<div class="item">
-  <img src="https://www.bancomundial.org/content/dam/photos/1200x400/2019/jan/Pakistan-Balochistan.jpg" alt="First slide">
-</div>
-<div class="item">
-  <img src="http://www.bancomundial.org/content/dam/photos/780x439/2018/jan-1/resultsLAC.jpg" alt="First slide">
-</div>
-    </div>
-Controles de cambio de slide
-<a href="#principalCarousel" class="left carousel-control" role="button" data-slide="prev"></a>
-    acá debería ir el ícono/componente de la flechita
-  </div>
-</div> -->
-<!--ESTE CODIGO DEL CARRUSEL ES EL QUE SE VE MEJOR, PERO AUN NO ENTIENDO POR QUÉ NO CORRE-->
 <div class="container">
+    <br>
+    <br>
+    <br>
 <div id="principalCarousel" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
   <div class="carousel-item active">
@@ -114,7 +82,11 @@ Controles de cambio de slide
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  <br>
+<br>
+<br>
 </div>
+
 <!--FIN DEL CARRUSEL-->
 <!--LAS 3 CAJAS DE TEXTO-->
   <div class="container">
@@ -148,6 +120,9 @@ Controles de cambio de slide
       </div>
       </box3>
     </section>
+    <br>
+<br>
+<br>
 </div>
 </div>
     <!--Página 2-->
@@ -165,26 +140,33 @@ Controles de cambio de slide
           </div>
         </div>
             <!--Página 3-->
-            <div id="page3">
-              <div>
+            <!-- <div id="page3">
+              <div class="buttons">
             <button id="">Educación</button>
             <button id="">Empleo</button>
             <button id="">Economicos</button>
             <button id="">Violencia</button>
             <button id="">Desempleo</button>
-            <!--ordenar-->
+            </div>
+            <br>
+            <br>
+            <br> -->
+            <div id="insert"></div>
+            <!--Página 4-->
+          </div >
+          <div id="page4">
+            <div id="newinsert">
+              <!--ordenar-->
             <select name="order" id="order">
               <option value="order">Ordenar</option>
             <option value="upper">ascendente</option>
             <option value="lower">descendente</option>
           </select>
             </div>
-            <br>
-            <br>
-            <br>
-            <div id="insert"></div>
           </div>
-            <div id="newinsert"></div>
+          <br>
+    <br>
+
 </main>
     <!--footer-->
     <footer>
