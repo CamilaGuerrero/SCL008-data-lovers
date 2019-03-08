@@ -14,7 +14,7 @@ describe('filter', () => {
    assert.equal(filterData(data que en este caso sería WORLDBANK, condition),resultado)
  })
  */
-})
+});
 
 describe('sort', () => {
 
@@ -26,7 +26,7 @@ describe('sort', () => {
    assert.equal(sortData(data que en este caso sería WORLDBANK, sortBy,sortOrder),resultado)
  })
  */
-})
+});
 
 describe('',()=>{
   it('debería ser una función', () => {
@@ -39,4 +39,4 @@ describe('',()=>{
  })
  */
 
-})
+});
