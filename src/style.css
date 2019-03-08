@@ -18,13 +18,17 @@
 }*/
 
 #pie-de-pagina {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 8%;
 	left: 0%;
 	bottom: 0%;
 	top: 145%;
 	background: #6482ce;
+}
+.buttons{
+    align:center;
+    display:inline-block;
 }
 
 .icon-footer {
@@ -41,8 +45,26 @@
 	right: 0%;
 }
 
+.link{
+text-decoration: none;
+color: #333333;
+}
+.link:link{
+   
+}
+.link:hover{
+text-decoration: underline;
+color: grey;
+}
+.link:active{
+    color: skyblue;
+}
+.link:visited{
+
+}
+
 .btn-primary {
-    background: #e3e74a
+    background: #6482ce;
 }
 
 .texto-box{
@@ -52,7 +74,6 @@
 }
 
 .container {
-    /*el container no pesca el tamaño desde acá*/
     width: 100%;
     background: #dadada;
 }
